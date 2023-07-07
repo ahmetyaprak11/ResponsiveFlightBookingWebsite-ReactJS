@@ -236,7 +236,6 @@ h2 {
 
 
 // Home componenti css tasarım
-
 .home {
     padding-top: 10rem;
     text-align: center;
@@ -274,7 +273,6 @@ h2 {
 }
 
 // Search componenti css tasarım
-
 .search {
     .sectionContainer {
         width: 100%;
@@ -352,6 +350,123 @@ h2 {
                             opacity: .5;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+// Support componenti css tasarım
+.support{
+    .sectionContainer{
+        .titlesDiv{
+            text-align: center;
+            small {
+                letter-spacing: .8rem;
+                text-transform: uppercase;
+                font-size: 13px;
+                color: var(--blackColor);
+                line-height: 1.5rem;
+            }
+        }
+
+        .infoDiv {
+            margin-top: 2rem;
+            gap: 1.5rem;
+            flex-direction: column;
+            
+
+            .textDiv {
+                gap: 1.5rem;
+                flex-direction: column;
+
+                .singleInfo {
+                    .number {
+                        background: var(--PrimaryColor);
+                        padding: 5px 12px;
+                        width: 40px;
+                        border-radius: 3rem;
+                        text-align: center;
+                        font-size: 13px;
+                        font-weight: 700;
+                        color: var(--whiteColor);
+                    }
+
+                    .colorOne {
+                        background: var(--colorOne);
+                    }
+
+                    .colorTwo {
+                        background: var(--colorTwo);
+                    }
+                }
+            }
+
+            .imgDiv {
+                margin: auto;
+                img {
+                    width: 100%;
+                    max-width: 420px; 
+                }
+            }
+        }
+    }
+}
+
+// Info compononeti css tasarım
+.info {
+    background: var(--SecondaryColor);
+    
+    .infoContainer {
+        
+        .titleDiv {
+            flex-direction: column;
+            text-align: center;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+
+        .cardsDiv {
+            gap: 1.5rem;
+            margin-top: 3rem;
+
+            .singleCard {
+                background: var(--whiteColor);
+                padding: 3rem 2rem;
+                border-radius: 10rem;
+                gap: 1rem;
+                text-align: center;
+                margin: auto;
+                height: 320px;
+                width: 90%;
+                max-width: 250px;
+                flex-direction: column;
+
+                .iconDiv {
+                    justify-content: center;
+                    margin: auto;
+                    background: var(--PrimaryColor);
+                    width: max-content;
+                    height: 55px;
+                    padding: 1rem;
+                    border-radius: 3rem;
+                    
+                    .icon {
+                        color: var(--whiteColor);
+                    }
+                }
+
+                .cardTitle {
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+
+                .colorOne {
+                    background: var(--colorOne);
+                }
+
+                .colorTwo {
+                    background: var(--colorTwo);
                 }
             }
         }
