@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 // Iconu kullanmak için import ediyoruz.
 
@@ -6,10 +6,20 @@ import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { RiAccountPinCircleLine } from 'react-icons/ri'
 import { LuCalendarDays } from 'react-icons/lu'
 
+// AOS import ediyoruz.
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 const Search = () => {
+
+     // UseEffect kullanarak animasyon ekliyoruz.
+     useEffect(()=> {
+        Aos.init({duration: 2000})
+    }, [])
+
     return (
         <div className="search container section">
-            <div className="sectionContainer grid">
+            <div data-aos='fade-up' data-aos-duration='2500' className="sectionContainer grid">
 
                 <div className="btns flex">
 
@@ -27,7 +37,7 @@ const Search = () => {
 
                 </div>
 
-                <div className="searchInputs flex">
+                <div data-aos='fade-up' data-aos-duration='2000' className="searchInputs flex">
                     {/*Single Input */}
                     <div className="singleInput flex">
                         <div className="iconDiv">
